@@ -75,10 +75,39 @@
          <div class="experience-item">
            <div class="icon-b wow bounceIn"><i class="fa fa-briefcase"></i></div>
            <div class="experience-item-inner wow bounceInRight">
+             <div class="date">2016+</div>
+             <h3>Front End Web Developer</h3>
+             <p>As a Front End Developer at Barkly Pets I have worked with a lot of new things. Gained an extensive knowledge in PHP.
+               Working at a startup I have really helped to be a part of a team to bring the business to better place.
+               This included, migrating the site to Wordpress, updating the pages for a better and more modern appearance, adding UI elements,
+               and incorporating SEO tactics in order to show up at the top of search engines organically
+             </p>
+           </div>
+         </div>
+       <div class="experience-item">
+         <div class="icon-b wow bounceIn"><i class="fa fa-briefcase"></i></div>
+         <div class="experience-item-inner wow bounceInRight">
+           <div class="date">2015 - 2017</div>
+           <h3>Interactive Developer</h3>
+           <p>At TrueChoice Solutions I worked with a lot of UI elements as well as building applications through an in-house process.
+             Several other duties included: Build client applications within due dates. Update client applications based on feedback.
+             Create brand new dynamic templates within the platform for reuse in client applications.
+             Work with HTML5, CSS3, JavaScript, LESS, Gulp, and Angular to create new functionality.
+             Set standard organizations for client releases in order to provide a more efficient release process.
+             Set a standard HTML email template for clients.</p>
+         </div>
+       </div>
+         <div class="experience-item">
+           <div class="icon-b wow bounceIn"><i class="fa fa-briefcase"></i></div>
+           <div class="experience-item-inner wow bounceInRight">
              <div class="date">2015+</div>
              <h3>Interactive Developer</h3>
-             <p>Lorem ipsum Cillum irure in dolor laboris culpa incididunt sint adipisicing nisi ullamco dolor enim aute do officia adipisicing enim laborum nostrud minim ut fugiat eiusmod commodo non culpa nisi incididunt minim esse aliqua laboris Excepteur
-               est eu quis nisi deserunt id.</p>
+             <p>At TrueChoice Solutions I worked with a lot of UI elements as well as building applications through an in-house process.
+               Several other duties included: Build client applications within due dates. Update client applications based on feedback.
+               Create brand new dynamic templates within the platform for reuse in client applications.
+               Work with HTML5, CSS3, JavaScript, LESS, Gulp, and Angular to create new functionality.
+               Set standard organizations for client releases in order to provide a more efficient release process.
+               Set a standard HTML email template for clients.</p>
            </div>
          </div>
          <div class="experience-item">
@@ -86,8 +115,12 @@
            <div class="experience-item-inner wow bounceInLeft">
              <div class="date">March 2015 - June 2015</div>
              <h3>Front-end developer Intern</h3>
-             <p>Lorem ipsum Anim veniam irure dolor irure dolor incididunt aute ut ea anim dolor cupidatat amet eu consequat velit ea occaecat sed mollit in do labore incididunt Duis nostrud est id labore veniam veniam non cupidatat ullamco et culpa voluptate
-               consequat nulla.</p>
+             <p>Developing web apps and gaining knowledge of different languages. Worked with the following languages:
+               HTML,
+               CSS,
+               JavaScript,
+               J Query,
+               Angular.js</p>
            </div>
          </div>
          <div class="experience-item">
@@ -95,7 +128,9 @@
            <div class="experience-item-inner wow bounceInRight">
              <div class="date">January 2015 - May 2015</div>
              <h3>Frontend Development Course</h3>
-             <p>Lorem ipsum Aliqua adipisicing consectetur exercitation proident ullamco reprehenderit dolor quis consequat nisi aute est reprehenderit laborum ut do laborum cupidatat deserunt elit dolore dolore ea labore mollit eu commodo veniam enim.</p>
+             <p>In this course I really started to dive deep into web development instead of teaching myself.
+               I gained a lot of knowledge on HTML CSS and the basics of JavaScript in order to build the foundations
+             needed to create some great UI. I built a portfolio and was at the top of my class.</p>
            </div>
          </div>
          <div class="experience-item">
@@ -103,7 +138,7 @@
            <div class="experience-item-inner wow bounceInLeft">
              <div class="date">2009 - 2014</div>
              <h3>Daniel Webster College</h3>
-             <p>Lorem ipsum Elit et enim aliqua voluptate reprehenderit esse dolore ullamco sint est in occaecat pariatur deserunt ea incididunt irure amet anim minim.</p>
+             <p>Bachelor's Degree in Psychology, President of the Psychology Club, Captain of the Women's Basketball Team.</p>
            </div>
          </div>
        </div>
@@ -165,6 +200,14 @@
              <div data-progress="40" class="skills-item wow">
                <div class="skills-item-progress"></div>
                <h4>MongoDB</h4>
+             </div>
+             <div data-progress="70" class="skills-item wow">
+               <div class="skills-item-progress"></div>
+               <h4>PHP</h4>
+             </div>
+             <div data-progress="75" class="skills-item wow">
+               <div class="skills-item-progress"></div>
+               <h4>WordPress</h4>
              </div>
            </div>
          </div>

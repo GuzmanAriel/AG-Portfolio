@@ -1,3 +1,6 @@
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+?>
 <!DOCTYPE html>
 <!--[if lte IE 9]>
 <html lang="en" class="lte-ie9">
@@ -20,7 +23,7 @@
   <!-- Place favicon.ico in the root directory-->
 
   <!-- Animate.css-->
-  <link rel="stylesheet" href="styles/animate.min.css">
+  <link rel="stylesheet" href="/styles/animate.min.css">
 
   <!-- Normalize CSS-->
   <link rel="stylesheet" href="styles/normalize.css">
@@ -38,7 +41,7 @@
   <link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,700italic,700%7CNothing+You+Could+Do" rel="stylesheet">
 
   <!-- Main Stylesheet-->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" media="all" href="styles/main.css"/>
 
 </head>
 
@@ -51,7 +54,7 @@
         <ul>
           <li><a href="index.html#intro">Intro</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#expirience">Expirience</a></li>
+          <li><a href="index.html#experience">experience</a></li>
           <li><a href="index.html#skills">Skills</a></li>
           <li><a href="index.html#projects">Projects</a></li>
           <li><a href="index.html#contacts">Contacts</a></li>

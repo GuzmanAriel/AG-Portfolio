@@ -1,49 +1,69 @@
-</div>
+<!-- BEGIN FOOTER-->
+<section id="contacts" class="section section-bg-img section-bg-overlay section-top-rise">
+  <div class="bg"></div>
+  <div class="section-inner">
 
-<!-- jQuery-->
-<script src="scripts/jquery.min.js"></script>
+    <div class="container">
 
-<!-- Instafeed-->
-<script src="plugins/instafeed/instafeed.min.js"></script>
+      <header class="heading">
+        <h2>Contacts</h2>
+        <div class="separator"></div>
+      </header>
 
-<!-- Google Maps API-->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <div class="contacts">
+        <div class="row">
+          <div class="col span_4">
+            <div class="contacts-item">
+              <div class="icon-b"><i class="fa fa-map-marker"></i></div>
+              <address class="adr"><span class="country-name">New York</span>, <span class="locality">New York</span>
+                </div>
+              </div>
+              <div class="col span_4">
+                <div class="contacts-item">
+                  <div class="icon-b"><i class="fa fa-phone"></i></div><span class="tel">914-473-6224</span>
+                </div>
+              </div>
+              <div class="col span_4">
+                <div class="contacts-item">
+                  <div class="icon-b"><i class="fa fa-send"></i></div><a href="mailto:mail@yoursite.com" class="email">guzmanariel525@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form method="post" action="send.php" class="contact-form">
+            <div class="row">
+              <div class="col span_6">
+                <div class="input">
+                  <label for="name">Your name</label>
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" class="input-field-item required">
+                  </div>
+                </div>
+              </div>
+              <div class="col span_6">
+                <div class="input">
+                  <label for="email">Your mail</label>
+                  <div class="input-field">
+                    <input type="text" name="email" id="email" class="input-field-item required">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input">
+              <label for="message">Drop some words</label>
+              <div class="input-field">
+                <textarea name="message" id="message" cols="30" rows="5" class="input-field-item required"></textarea>
+              </div>
+            </div>
+            <div class="center">
+              <input type="submit" value="Send" class="btn btn-bordered">
+            </div>
+          </form>
 
-<!-- Magnific Popup-->
-<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+        </div>
 
-<!-- One Page Nav-->
-<script src="plugins/one-page-nav/jquery.nav.js"></script>
+      </div>
+    </section>
+    <!-- END FOOTER-->
 
-<!-- Owl Carousel-->
-<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-
-<!-- Shuffle-->
-<script src="plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
-
-<!-- Twitter Fetcher-->
-<script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script>
-
-<!-- Validate-->
-<script src="plugins/jquery-validate/jquery.validate.min.js"></script>
-
-<!-- WOW-->
-<script src="plugins/wowjs/wow.min.js"></script>
-
-<!-- Main Scripts-->
-<script src="scripts/main.js"></script>
-<!--tracking visitors-->
-          <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-66260937-1', 'auto');
-            ga('send', 'pageview');
-
-          </script>
-
-</body>
-
-</html>
+    <?php wp_footer(); ?>

@@ -26,7 +26,6 @@
 </div>
 
 </div>
-<canvas id="particles"></canvas>
 </article>
 </section>
 <?php get_footer(); ?>

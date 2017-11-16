@@ -16,7 +16,7 @@
           <li><a href="index.html#skills">Skills</a></li>
           <li><a href="index.html#projects">Projects</a></li>
           <li><a href="index.html#contacts">Contacts</a></li>
-          <li><a href="https://ancient-sands-67232.herokuapp.com/" class="external">Blog</a></li>
+          <li><a href="/blog" class="external">Blog</a></li>
         </ul>
       </nav>
       <div class="btn-icon btn-nav">

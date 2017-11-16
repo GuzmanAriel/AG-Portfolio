@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<div class="category-header">
+  <ul>
+    <li><a href="/blog">All</a></li>
+    <?php wp_list_categories('title_li=');?>
+  </ul>
+</div>
 <section id="content" role="main">
   <article id="general" class="section section-bg-dark section-bottom-rise">
     <div class="section-inner">

@@ -2941,6 +2941,11 @@ a img.aligncenter {
   width: 100%;
   height:2px;
 }
+
+#general .divider:last-child{
+  display: none;
+}
+
 #general .blog-archive-cont .text-content {
   float: left;
   width: 50%;
@@ -2969,4 +2974,61 @@ a img.aligncenter {
 #general .blog-archive-cont .the-author .author-text {
   position: relative;
   top: 20px;
+}
+
+#single h2{
+  margin:0 auto;
+  width: 100%;
+}
+
+#single img{
+  width: 100%;
+  height:600px;
+  display:block;
+  margin:0 auto;
+}
+
+#single p{
+  margin: 25px auto;
+  width: 100%;
+}
+
+#single .the-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#single .the-author .author-text {
+  display:inline-block;
+  position: relative;
+  top: -20px;
+}
+
+#single .the-author .author-img {
+  display:inline-block;
+}
+
+.category-header{
+  background:#1C202B;
+  text-align: center;
+}
+
+.category-header ul li{
+  list-style:none;
+  display: inline-block;
+  margin-left: 2%;
+  font: 20px Roboto Mono, serif;
+}
+
+.category-header ul{
+  padding-top: 10px;
+  margin: 0px auto;
+  display: block;
+  width:100%;
+}
+
+.category-header ul li a{
+  text-decoration: none;
 }

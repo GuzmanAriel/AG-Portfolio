@@ -8,7 +8,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'large', 1200, 600, true );
 add_image_size( 'sidebar-thumb', 120, 120, true ); // Hard Crop Mode
 add_image_size( 'alt-thumb', 400, 300, true ); // Hard Crop Mode
-add_image_size( 'featured', 1200, 800, false ); // Hard Crop Mode
+add_image_size( 'featured', 800, 600, true ); // Hard Crop Mode
 
 function custom_excerpt_length( $length ) {
 	return 60;
@@ -21,7 +21,54 @@ function wpdocs_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 
+// Adds Time
+function time_ago() {
+	global $post;
+	$date = get_post_time('G', true, $post);
+	$chunks = array(
+		array( 60 * 60 * 24 * 365 , __( 'year', 'themeblvd' ), __( 'years', 'themeblvd' ) ),
+		array( 60 * 60 * 24 * 30 , __( 'month', 'themeblvd' ), __( 'months', 'themeblvd' ) ),
+		array( 60 * 60 * 24 * 7, __( 'week', 'themeblvd' ), __( 'weeks', 'themeblvd' ) ),
+		array( 60 * 60 * 24 , __( 'day', 'themeblvd' ), __( 'days', 'themeblvd' ) ),
+		array( 60 * 60 , __( 'hour', 'themeblvd' ), __( 'hours', 'themeblvd' ) ),
+		array( 60 , __( 'minute', 'themeblvd' ), __( 'minutes', 'themeblvd' ) ),
+		array( 1, __( 'second', 'themeblvd' ), __( 'seconds', 'themeblvd' ) )
+	);
 
+	if ( !is_numeric( $date ) ) {
+		$time_chunks = explode( ':', str_replace( ' ', ':', $date ) );
+		$date_chunks = explode( '-', str_replace( ' ', '-', $date ) );
+		$date = gmmktime( (int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0] );
+	}
+
+	$current_time = current_time( 'mysql', $gmt = 0 );
+	$newer_date = time();
+
+	$since = $newer_date - $date;
+
+	if ( 0 > $since )
+		return __( 'sometime', 'themeblvd' );
+
+	for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
+		$seconds = $chunks[$i][0];
+
+		if ( ( $count = floor($since / $seconds) ) != 0 )
+			break;
+	}
+
+	$output = ( 1 == $count ) ? '1 '. $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
+
+
+	if ( !(int)trim($output) ){
+		$output = '0 ' . __( 'seconds', 'themeblvd' );
+	}
+
+	$output .= __(' ago', 'themeblvd');
+
+	return $output;
+}
+// DO IT Baby!
+add_filter('the_time', 'time_ago');
 
 
 // Google Analytics

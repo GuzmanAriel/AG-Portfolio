@@ -12,6 +12,9 @@
             </div>
             <div class="author-text">
               <?php echo get_the_author(); ?>
+              <time datetime="<?php echo time_ago(); ?>">
+                  <?php echo time_ago(); ?>
+              </time>
             </div>
           </div>
         </div>

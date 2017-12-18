@@ -1,5 +1,4 @@
 <?php
-
 add_action( 'after_setup_theme', 'blankslate_setup' );
 function blankslate_setup()
 {
@@ -66,6 +65,10 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+?>
+
+<?php
 
 $GLOBALS['bodyClass'] = $bodyClass;
 

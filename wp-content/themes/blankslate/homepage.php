@@ -1,9 +1,4 @@
-<?php
-    /**
-    * Template Name: Home Page
-    * Theme Name: BlankSlate
-    */
-?>
+<?php /* Template Name: Home Page */ ?>
 
 <?php
   get_header();

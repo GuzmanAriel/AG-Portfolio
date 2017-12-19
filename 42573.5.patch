@@ -1,0 +1,35 @@
+diff --git src/wp-includes/class-wp-theme.php src/wp-includes/class-wp-theme.php
+index 171d8b6c58..d577ba7a6d 100644
+--- src/wp-includes/class-wp-theme.php
++++ src/wp-includes/class-wp-theme.php
+@@ -984,11 +984,17 @@ final class WP_Theme implements ArrayAccess {
+ 	 *               being absolute paths.
+ 	 */
+ 	public function get_files( $type = null, $depth = 0, $search_parent = false ) {
+-		// get and cache all theme files to start with.
+-		$label = sanitize_key( 'files_' . $this->cache_hash . '-' . $this->get( 'Version' ) );
+-		$transient_key = substr( $label, 0, 29 ) . md5( $label );
++		$do_caching = $depth > 1;
++		$all_files  = false;
++
++		if ( $do_caching ) {
++			// get and cache all theme files to start with.
++			$label = sanitize_key( 'files_' . $this->cache_hash . '-' . $this->get( 'Version' ) );
++			$transient_key = substr( $label, 0, 29 ) . md5( $label );
++
++			$all_files = get_transient( $transient_key );
++		}
+ 
+-		$all_files = get_transient( $transient_key );
+ 		if ( false === $all_files ) {
+ 			$all_files = (array) self::scandir( $this->get_stylesheet_directory(), null, -1 );
+ 
+@@ -996,7 +1002,7 @@ final class WP_Theme implements ArrayAccess {
+ 				$all_files += (array) self::scandir( $this->get_template_directory(), null, -1 );
+ 			}
+ 
+-			set_transient( $transient_key, $all_files, HOUR_IN_SECONDS );
++			$do_caching && set_transient( $transient_key, $all_files, 5 * MINUTE_IN_SECONDS );
+ 		}
+ 
+ 		// Filter $all_files by $type & $depth.

@@ -12,6 +12,7 @@ body {
   background: #fff;
   font: 87.5%/1 Roboto Mono, serif;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 h1 {

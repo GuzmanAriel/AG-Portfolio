@@ -159,9 +159,9 @@
          <div class="col span_8">
            <h3>My skills</h3>
            <div class="separator l"></div>
-           <p>In my time as a web devloper I have worked for two companies where I have worked with frontend languages. I have worked with a lot of HTML, CSS, LESS, JavaScript, and Angular. I've also worked with jQuery and Bootstrap but try to stray away
-             from those frameworks as I see them as a detriment to learning vanilla JavaScript and CSS3. I've also gained a lot of knoledge of gulp and Node through my work experiences.</p>
-           <p>I've learned most languages by doing as I think anyone else would but my favorite project that taught me a stack was my personal blog. I see there are a lot of blog generators out there in the world, but I took it upon myself to build of scratch
+           <p>In my time as a web developer I have worked for two companies where I have gained experience with frontend languages. I have worked with a lot of HTML, CSS, LESS, JavaScript, and some Angular. I've also worked with jQuery and Bootstrap but try to stray away
+             from those frameworks as I see them as a detriment to learning vanilla JavaScript and CSS3. I've also gained a lot of knowledge of gulp and Node through my work experiences.</p>
+           <p>I've learned most languages by doing as I think anyone else would, but my favorite project that taught me a stack was my personal blog. I see there are a lot of blog generators out there in the world, but I took it upon myself to build of scratch
              using Node, MongoDB, Express.js, and a few npm packages.</p>
          </div>
          <div class="col span_4">
@@ -288,6 +288,77 @@
                <p>Had some fun creating a game to get started with HTML5 Canvas. A lot of math was involved with this build but it was well worth it. HTML5 Canvas is way more powerful than I thought. It is only one player vs the computer. First player to
                  3 wins.</p>
                <div class="center"><a href="javaScriptGame/index.html" class="btn">View site</a></div>
+             </div>
+           </div>
+         </li>
+
+         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-6" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-6.jpg" width="250" height="250" alt=""></span></a>
+           <div id="works-item-details-6" class="popup mfp-hide">
+             <figure><img src="images/work-photo-6.jpg" width="750" height="500" alt=""></figure>
+             <div class="popup-inner">
+               <h3>Iphone animation</h3>
+               <p>To help Barkly Pets users better understand the application I provided visuals of the application. The Iphone was a background image
+               and different stages of the application were stacked on one another with absolute positioning within the screen of the Iphone. I then used
+               keyframes to fade in and fade out the screens in order of the steps the users would go through the application.</p>
+               <div class="center"><a href="https://barklypets.com" class="btn">View site</a></div>
+             </div>
+           </div>
+         </li>
+
+         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-7" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-7.jpg" width="250" height="250" alt=""></span></a>
+           <div id="works-item-details-7" class="popup mfp-hide">
+             <figure><img src="images/work-photo-7.jpg" width="750" height="500" alt=""></figure>
+             <div class="popup-inner">
+               <h3>Barkly Pets Blog</h3>
+               <p>Throughout my time at Barkly Pets we migrated the whole site to WordPress including the blog. A part of the migration included revamping
+               the look and feel of the blog. I helped build the design with PHP, HTML, LESS, and JavaScript. I also leveraged the use of localStorage in javaScript
+               with the popup. The popup was built to show when you get the the end of the page. It only shows if the user has not yet seen the popup ever, if they haven't seen the
+              popup within the last 12 hours. The popup does not show if the user has signed up, and if the user does see the popup in that instance and clicks out without signing up
+              a version of that signup appears in the sidebar. This action created a new possibility to signup for the blog subscription.  </p>
+               <div class="center"><a href="https://barklypets.com/blog" class="btn">View site</a></div>
+             </div>
+           </div>
+         </li>
+
+         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-8" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-8.jpg" width="250" height="250" alt=""></span></a>
+           <div id="works-item-details-8" class="popup mfp-hide">
+             <figure><img src="images/work-photo-8.jpg" width="750" height="500" alt=""></figure>
+             <div class="popup-inner">
+               <h3>Barkly Pets "How it works" page</h3>
+               <p>During Barkly Pets' revamp of particular pages this was one of my favorite revamps I was involved in. The left and right design
+               gave my a great idea to add animations as the user scrolls down. As the user scrolls the images and text slide in left or right depending option
+             what side it was presented on. If it was centered, the content would slide from bottom to top. I hope to created library that people can use with this sort of
+           animation. </p>
+               <div class="center"><a href="https://barklypets.com/how-it-works" class="btn">View site</a></div>
+             </div>
+           </div>
+         </li>
+
+         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-9" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-9.jpg" width="250" height="250" alt=""></span></a>
+           <div id="works-item-details-9" class="popup mfp-hide">
+             <figure><img src="images/work-photo-9.jpg" width="750" height="500" alt=""></figure>
+             <div class="popup-inner">
+               <h3>Barkly Pets City and Neighborhood Pages</h3>
+               <p>SEO was an important task for me at Barkly Pets. In order to gain SEO we had to add a lot of backlins throughout the site and also gain
+               SEO for particular keywords involved with city or neighborhood within that city. With design help we revamped the pages to make them more inviting, added
+              keywords that related to the pages and created backlinks to related neighborhoods. The most challenging aspect was adding related neighborhoods.
+              I assigned keys that were numbers to neighborhoods based on it's proximity to one another, then checked to see which 4 keys were the closest in number value and showed
+              that data.
+             </p>
+               <div class="center"><a href="https://barklypets.com/cities/newyork/chelsea/" class="btn">View site</a></div>
+             </div>
+           </div>
+         </li>
+
+         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-10" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-10.jpg" width="250" height="250" alt=""></span></a>
+           <div id="works-item-details-10" class="popup mfp-hide">
+             <figure><img src="images/work-photo-10.jpg" width="750" height="500" alt=""></figure>
+             <div class="popup-inner">
+               <h3>Barkly Pets City Page</h3>
+               <p> I though of this simple design to represent the cities Barkly Pets provided their services in. I loved developing this because of the simple
+               add ons that make this page intuitive. When you hover over a a city the background image zooms in and the color of the overlay changes. This small ad on tells the user
+              that this page is clickable in order to see that page for that specific city.</p>
+               <div class="center"><a href="https://barklypets.com/cities" class="btn">View site</a></div>
              </div>
            </div>
          </li>

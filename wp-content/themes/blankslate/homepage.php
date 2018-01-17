@@ -238,17 +238,6 @@
        </ul>
 
        <ul class="works">
-         <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-1" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-1.jpg" width="250" height="250" alt=""></span></a>
-           <div id="works-item-details-1" class="popup mfp-hide">
-             <figure><img src="images/work-photo-1.jpg" width="750" height="500" alt=""></figure>
-             <div class="popup-inner">
-               <h3>G.O.S.H.</h3>
-               <p>One of my very first projects. This is a project I did for the team I volunteered with, whose site was outdated. I used HTML5, Bootstrap, CSS3, and some JQuery. I take pride in the navbar, which put less content on the page as opposed to
-                 what they had before. Also, the modules I used to describe each person who is a part of G.O.S.H. INC.</p>
-               <div class="center"><a href="Warriors/index.html" class="btn">View site</a></div>
-             </div>
-           </div>
-         </li>
          <li data-groups="[&quot;web&quot;]" class="works-item"><a href="#works-item-details-2" class="works-item-link"><span class="works-item-thumb"><img src="images/work-thumb-2.jpg" width="250" height="250" alt=""></span></a>
            <div id="works-item-details-2" class="popup mfp-hide">
              <figure><img src="images/work-photo-2.jpg" width="750" height="500" alt=""></figure>

@@ -1,6 +1,5 @@
 <?php
   $path = $_SERVER['DOCUMENT_ROOT'];
-
 ?>
 <?php wp_head(); ?>
 
@@ -11,12 +10,12 @@
     <div class="main-nav">
       <nav>
         <ul>
-          <li><a href="/#intro">Intro</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#experience">experience</a></li>
-          <li><a href="/#skills">Skills</a></li>
-          <li><a href="/#projects">Projects</a></li>
-          <li><a href="/#contacts">Contacts</a></li>
+          <li><a href="index.html#intro">Intro</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
           <li><a href="/blog" class="external">Blog</a></li>
         </ul>
       </nav>

@@ -46,6 +46,8 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
+ define('WP_HOME', 'http://localhost');
+ define('WP_SITEURL', 'http://localhost');
 define('AUTH_KEY',         'g.x;!!x>21.~FNuGazdJcu>+el&YdeS t=gaXQY`rwIXTT*JYYPS RaYn1CDnsfv');
 define('SECURE_AUTH_KEY',  '|RZ,S{BBmYnNI)t8D,8 ee Ryfs.H#s#}dfnP%sa0a;j`~J>-=NJjgBwIwnU.MJ0');
 define('LOGGED_IN_KEY',    'FGrUf VNHv9(Z0c6dvN%q-b9#O+7k9w.[9MM(l>W2VT*kjJ9%3rbg}?Yo>y(H2^O');
@@ -77,7 +79,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 

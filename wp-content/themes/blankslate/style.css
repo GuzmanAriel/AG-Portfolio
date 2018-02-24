@@ -619,10 +619,6 @@ a.alignleft, a.alignright {
   text-align: center;
 }
 
-#intro .bg {
-  background-image: url("../images/Ariel.jpg");
-}
-
 #intro #particles {
   position: absolute;
   left: 0;

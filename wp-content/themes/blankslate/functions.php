@@ -2,8 +2,32 @@
 
 $GLOBALS['bodyClass'] = $bodyClass;
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'project',
+        array(
+            'labels' => array(
+                'name' => __( 'Project' ),
+                'singular_name' => __( 'Project' )
+            ),
+        'public' => true,
+        'has_archive' => true,
+				'rewrite' => array( 'slug' => 'project', 'with_front' => false ),
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields')
+        )
+    );
+}
 
+add_action( 'template_redirect', 'wpse_45164_redirect_project' );
 
+function wpse_45164_redirect_project(){
+    if ( ! is_singular( 'project' ) )
+        return;
+
+    wp_redirect( get_post_type_archive_link( 'project' ), 301 );
+    exit;
+
+}
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'large', 1200, 600, true );
 add_image_size( 'sidebar-thumb', 120, 120, true ); // Hard Crop Mode
